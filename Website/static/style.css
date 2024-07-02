@@ -21,6 +21,64 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 30px;
 
 }
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color:#555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis:auto;
+    min-width: 300px;
+       
+    
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin: 25px 0;
+}
+.col-2 p{
+    text-align: center;
+}
+
+.row img{
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+          
+}
+
+.btn{
+    display: block;
+    background:#006400;
+    color: #fff;
+    padding: 8px 55px;
+    margin: 20px 100px;
+    border-radius: 20px;
+}
+.header{
+    background: radial-gradient(#fff,#90EE90);
+}
+

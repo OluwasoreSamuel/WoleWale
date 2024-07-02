@@ -8,19 +8,42 @@
 
 </head>
 <body>
-    <div class = "navbar" >
-        <div class = "logo">
-            <img src="{{url_for ('static', filename = "images/live_chicken.jpg")}}" alt = "logo" width = "70px"/>
+<div class="header">
+    <div class = "container">
+        <div class = "navbar" >
+            <div class = "logo">
+                <img src="{{url_for ('static', filename = "images/wole.png")}}" alt = "logo" width = "150px"/>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">About us</a></li>
+                    <li> <a href="">Contact</a></li>
+                    <li> <a href="">Products</a></li>
+                    <li> <a href="">Blog</a></li> 
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li> <a href="">Home</a></li>
-                <li> <a href="">About us</a></li>
-                <li> <a href="">Contact</a></li>
-                <li> <a href="">Products</a></li> 
-            </ul>
-        </nav>
     </div>
+    <div class="row"> 
+        <div class="col-2">
+            <h1>We Offer The <br>Best!</h1>
+            <p>We also offer consultancy services for startups. <br> We guide you through the way till you can stand on your own.</p> 
+            <a href="" class="btn"> Explore Now &#8594</a>     
+        </div>
+        <div col="col-2"> 
+           <div class="row">
+            <img src = "{{url_for('static', filename= "images/live_rabbit.jpg")}}" alt = "error" width="250px" height = "200px">
+            <img src = "{{url_for('static', filename= "images/live_cow.jpg")}}" alt = "error"width="250px"height = "200px">           
+           </div>
+           <div class="row">
+            <img src = "{{url_for('static', filename= "images/live_chicken.jpg")}}" alt = "error"width="250px" height = "200px">
+            <img src = "{{url_for('static', filename= "images/live_snails.jpg")}}" alt = "error"width="250px"height = "200px">
+           </div>
+
+        </div>
+    </div>
+</div>
     
 
 </body>
