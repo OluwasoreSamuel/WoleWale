@@ -12,7 +12,7 @@
     <div class = "container">
         <div class = "navbar" >
             <div class = "logo">
-                <img src="{{url_for ('static', filename = "images/wolewale.png")}}" alt = "logo" width = "50px"/>
+                <img src="{{url_for ('static', filename = "images/wolewale.png")}}" alt = "logo"/>
             </div>
             <nav>
                 <ul>
@@ -20,26 +20,29 @@
                     <li> <a href="">About us</a></li>
                     <li> <a href="">Contact</a></li>
                     <li> <a href="">Products</a></li>
-                    <li> <a href="">Blog</a></li> 
+                    <li> <a href="./blog.html">Blog</a></li> 
                 </ul>
             </nav>
         </div>
     </div>
 <div class="header">
     <div class="row"> 
-        <div class="col-2">
+        <div class="col-btn">
             <h1>We Offer The <br>Best!</h1>
             <p>We also offer consultancy services for startups. <br> We guide you through the way till you can stand on your own.</p> 
-            <a href="" class="btn">Explore Now &#8594</a>     
+            <!-- The explore button/link -->
+             <div class="btn-wrapper">
+                <a href="" class="btn">Explore Now &#8594</a>     
+             </div>
         </div>
-        <div col="col-2"> 
+        <div class="col-2"> 
            <div class="row-2">
-            <img src = "{{url_for('static', filename= "images/live_rabbit.jpg")}}" alt = "error" width="250px" height = "200px">
-            <img src = "{{url_for('static', filename= "images/live_cow.jpg")}}" alt = "error"width="250px"height = "200px">           
+            <img src = "{{url_for('static', filename= "images/live_rabbit.jpg")}}" alt = "error">
+            <img src = "{{url_for('static', filename= "images/live_cow.jpg")}}" alt = "error">           
            </div>
            <div class="row-2">
-            <img src = "{{url_for('static', filename= "images/live_chicken.jpg")}}" alt = "error"width="250px" height = "200px">
-            <img src = "{{url_for('static', filename= "images/live_snails.jpg")}}" alt = "error"width="250px"height = "200px">
+            <img src = "{{url_for('static', filename= "images/live_chicken.jpg")}}" alt = "error">
+            <img src = "{{url_for('static', filename= "images/live_snails.jpg")}}" alt = "error">
            </div>
         </div>
     </div>

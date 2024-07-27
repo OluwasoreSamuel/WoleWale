@@ -8,11 +8,16 @@ body{
    
 }
 
-
+.logo img {
+    width: 100px;
+    /* height: 100px; */
+    object-fit: cover;
+}
 .navbar{
     display: flex;
     align-items: center;
     padding: 20px;
+    background: radial-gradient(#fff,#98FB98);
 }
 nav{
     flex: 1;
@@ -27,6 +32,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-right: 20px;
+    font-weight: 500;
 
 }
 a{
@@ -38,10 +44,11 @@ p{
 }
 
 .container{
-    max-width: 1300px;
+    width: 100%;
+    /* max-width: 1300px; */
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
 }
 .row{
     display:flex;
@@ -51,9 +58,13 @@ p{
 
 }
 
-.col-2{
+.col-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     flex-basis:50%;
-    min-width: 300px;    
+    min-width: 300px;
+    text-align: center;
 }
 
 .col-2 h1{
@@ -70,17 +81,22 @@ p{
     max-width: 200%;
     margin-left: 25px;
     margin-top: 25px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-wrapper {    
+    margin-top: 30px;
 }
 
 .btn{
-    display: block;
+    font-size: 14px;
     background:#006400;
     color: #fff;
-    padding: 8px 100px;
-    padding-left: 25px;
-    margin: 40px 255px;
+    padding: 10px 15px; 
     border-radius: 30px;
-    transition: background 0.5s;
+    transition: all ease 400ms;
 }
 
 .btn:hover{
@@ -88,7 +104,8 @@ p{
 }
 
 .header{
-    background: radial-gradient(#fff,#98FB98);
+    /* background: radial-gradient(#fff,#98FB98); */
+    background: #beafaf;
 }
 
 
