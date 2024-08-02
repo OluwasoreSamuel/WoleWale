@@ -6,9 +6,13 @@
     <title>WOLEWALE LTD</title>
     <link rel = "stylesheet" href= "{{url_for ('static', filename='style.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- animation stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
+<div class="animated-element">
     <div class = "container">
         <div class = "navbar" >
             <div class = "logo">
@@ -27,10 +31,10 @@
 <div class="header">
     <div class="row"> 
         <div class="col-btn">
-            <h1>We Offer The <br>Best!</h1>
+            <h1 data-aos="fade-left" data-aos-once="true">We Offer The <br>Best!</h1>
             <p>We also offer consultancy services for startups. <br> We guide you through the way till you can stand on your own.</p> 
             <!-- The explore button/link -->
-             <div class="btn-wrapper">
+             <div class="btn-wrapper" data-aos="fade-up" data-aos-once="true">
                 <a href="" class="btn">Explore Now <span>&#8594</span></a>     
              </div>
         </div>
@@ -49,10 +53,10 @@
 
 
 <!-- featured categories -->
-<div class="small-container">
+<div class="small-container" data-aos="fade-up">
     <h2 class="title">Our Products</h2>
     <div class="row">
-        <div class="col-3">
+        <div class="col-3" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
             <img src = "{{url_for('static', filename="images/rabbit.jpg")}}">
             <h4>Barbecued Rabbit</h4>
             <div class="products">
@@ -70,7 +74,7 @@
                 </div>
             </div>            
         </div>
-        <div class="col-3">
+        <div class="col-3" data-aos="fade-left" data-aos-delay="700"  data-aos-duration="1200" data-aos-once="true">
             <img src = "{{url_for('static', filename="images/chicken.jpg")}}">
             <h4>Processed Chicken</h4>
             <div class="products">
@@ -88,7 +92,7 @@
                 </div>
             </div>  
         </div>
-        <div class="col-3">
+        <div class="col-3" data-aos="flip-up" data-aos-delay="900"  data-aos-duration="1500" data-aos-once="true">
             <img src = "{{url_for('static', filename="images/snail.jpg")}}">
             <h4>Proccessed Snail</h4>
             <div class="products">
@@ -137,6 +141,16 @@
         <p class="copyright">WOLEWALE FARM LIMITED</p>
     </div>
 </div>
+</div>
 
+
+<!-- animation script using Javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 70,
+    duration: 1000,
+  });
+</script>
 </body>
 </html>

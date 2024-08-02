@@ -8,6 +8,33 @@ body{
    
 }
 
+/* styles for the scroll-bar and for smooth scrolling of the webpage */
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #006400; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+}
+
+/* Style the scrollbar track when the mouse is over it */
+::-webkit-scrollbar-thumb:hover {
+    background: #00640098;  
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #98FB98; /* Color of the scrollbar track */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 .logo img {
     width: 100px;
     /* height: 100px; */
@@ -232,6 +259,24 @@ p{
 .copyright{
     text-align: center;
 }
+
+
+
+/* ============================  ANIMATION KEYFRAMES STYLES ======================================= */
+/* KEYFRAMES FOR THE WHOLE WEBPAGE ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-element {
+    animation: fadeIn 1s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
 
 
 /* media query */
