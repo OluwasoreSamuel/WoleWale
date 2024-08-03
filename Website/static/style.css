@@ -64,7 +64,7 @@ nav ul li{
 }
 a{
     text-decoration: none;
-    color: #555;
+    color: #fcfbfb;
 }
 p{
     color:#555;
@@ -207,7 +207,9 @@ p{
     color: #fff;
     margin-bottom: 20px;
 }
-
+.footer ul li{
+    color: #fff;
+}
 .footer-col-1, .footer-col-2{
     min-width: 250px;
     margin-bottom: 40px;
@@ -294,6 +296,7 @@ p{
         margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 0px;
+        color: #fff;
     }
     .col-btn{
         display: block;
