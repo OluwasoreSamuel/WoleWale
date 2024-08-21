@@ -1,6 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    outline: 0;
+    border: none;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
     box-sizing: border-box;
 }
 body{
@@ -43,13 +49,13 @@ html {
 .navbar{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
     background: radial-gradient(#fff,#98FB98);
 }
 nav{
     flex: 1;
     text-align: right;
-   
 }
 
 nav ul{
@@ -78,6 +84,25 @@ p{
     /* padding-left: 25px; */
     /* padding-right: 25px; */
 }
+
+/* menu button */
+#menu-btn,
+.close {
+    display: none;
+    background: none;
+    cursor: pointer;
+}
+
+#menu-btn span,
+.close span {
+    font-size: 1.8rem;
+    
+}
+
+
+
+
+
 .row{
     display:flex;
     align-items:center;
@@ -112,6 +137,7 @@ p{
     width: 250px;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .btn-wrapper {    
@@ -210,6 +236,10 @@ p{
     margin-bottom: 20px;
 }
 .footer ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
     color: #fff;
 }
 .footer-col-1, .footer-col-2{
@@ -282,23 +312,76 @@ p{
 
 
 
-/* media query */
+/*================================ media query ==========================================*/
+
+/* ============== Mobile Screens =============================== */
 @media only screen and (max-width:800px) {
 
+    /* menu button displays */
+    #menu-btn {
+        display: block;
+    }
+    nav {
+        overflow: hidden;
+    }
     nav ul{
-        position: absolute;
-        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        position: fixed;
+        top: -100%;
         left: 0;
         background: #333;
         width: 100%;
+        height: 100vh;
+        z-index: 3;
+        overflow: hidden;
+        display: none;
+        animation: showMenu 500ms ease forwards;
+        
     }
     nav ul li{
-        display: block;
-        margin-right: 50px;
         margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         color: #fff;
+        font-size: 1.55rem;
     }
+
+    /* keyframes animations */
+    @keyframes showMenu {
+        to{
+            top: 0;
+        }
+    }
+
+    /* brings the close icon to view when clicked */
+    @keyframes showCloseMenu {
+        to{
+            top: 2.5rem;
+        }
+    }
+
+    /* close icon */
+    .close {
+        display: inline-block;
+        cursor: pointer;
+        top: -100%;
+        z-index: 4;
+        position: fixed;
+        animation: showCloseMenu 500ms ease forwards;
+        display: none;
+    }
+
+    .close span {
+        /* background: red; */
+        color: #afadad !important;
+        font-size: 1.85rem;
+        font-weight: 500;
+    }
+/* ======== NAV ENDS ================ */
+
     .col-btn{
         display: block;
         margin-top: 100px;
